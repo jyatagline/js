@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  position: fixed;
+  width: 100%;
+  background-color: antiquewhite;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  position: fixed;
+  width: 90%;
+  top: 3.4rem;
+  background: grey;
+  text-align: center;
+  padding: 7px 0px;
+  /* animation-duration: 4s; */
+  border-radius: 10px;
+  margin: 14px 19px;
+}
+
+.nav-list li {
+  padding: 10px 0px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.top-section img {
+  height: 50px;
+  padding: 5px 20px;
+}
+
+.humberger {
+  padding: 0px 20px;
+}
+
+.hide {
+  display: none;
+}
+.middle-section {
+  background-image: url("https://images.unsplash.com/photo-1567958436049-f2903793328b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+}
+.middle-section h2 {
+  margin: auto;
+  font-weight: bolder;
+  font-size: 50px;
+  color: palegreen;
+}
+.cart {
+  display: inline-block;
+  width: 90%;
+  /* margin: auto; */
+  text-align: center;
+  padding: 18px 0px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 15px 15px;
+  border-radius: 10px;
+  background: lightcyan;
+}
+.cart-image {
+  height: 150px;
+  width: 100px;
+}
+.bottom-section h1 {
+  font-size: 40px;
+  padding: 13px 0px;
+  color: darkgreen;
+  text-align: center;
+}
+.footer {
+  height: 15vh;
+  background-color: grey;
+  /* margin: auto; */
+  display: flex;
+}
+.footer p {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  margin: auto;
+}
+@media screen and (min-width: 600px) {
+  .nav-list {
+    display: block;
+    position: static;
+    width: auto;
+    margin: initial;
+    padding: initial;
+    background: none;
+  }
+
+  .nav-list li {
+    display: inline-block;
+    padding: 25px 15px;
+    color: black;
+    font-size: 22px;
+    font-family: cursive;
+    cursor: pointer;
+  }
+
+  .humberger {
+    display: none;
+  }
+  .middle-section {
+    height: 100vh;
+  }
+  .cart {
+    width: 23%;
+    /* margin: auto; */
+    text-align: center;
+    /* padding: 18px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 15px 15px;
+    border-radius: 10px;
+    background: lightcyan;
+  }
+  .cart-image {
+    height: 200px;
+  }
+  #data {
+    text-align: center;
+  }
+  .top-section img {
+    height: 70px;
+    padding: 5px 20px;
+  }
+}
